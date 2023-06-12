@@ -13,7 +13,10 @@ class JitsiMeetMethods {
     String username = '',
   }) async {
     try {
-      Map<FeatureFlag, Object> featureFlags = {};
+      Map<FeatureFlag, Object> featureFlags = {
+        FeatureFlag.isWelcomePageEnabled: false,
+        FeatureFlag.isNotificationsEnabled: false,
+      };
       // featureFlag.welcomePageEnabled = false;
       // featureFlag.resolution = FeatureFlagVideoResolution
       //     .MD_RESOLUTION; // Limit video resolution to 360p

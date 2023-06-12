@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:jitsi_meet_fix/jitsi_meet.dart';
+import 'package:jitsi_meet_wrapper/jitsi_meet_wrapper.dart';
 import 'package:zoom_clone/resources/auth_methods.dart';
 import 'package:zoom_clone/resources/jitsi_meet_methods.dart';
 import 'package:zoom_clone/utils/colors.dart';
@@ -33,7 +33,7 @@ class _VideoCallScreenState extends State<VideoCallScreen> {
     super.dispose();
     meetingIdController.dispose();
     nameController.dispose();
-    JitsiMeet.removeAllListeners();
+    JitsiMeetWrapper.hangUp();
   }
 
   _joinMeeting() {

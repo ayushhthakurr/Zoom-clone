@@ -25,7 +25,7 @@ class _HomeScreenState extends State<HomeScreen> {
     const HistoryMeetingScreen(),
     const Text('Contacts'),
     const Text('Settings'),
-    //CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut()),
+    CustomButton(text: 'Log Out', onPressed: () => AuthMethods().signOut()),
   ];
 
   @override

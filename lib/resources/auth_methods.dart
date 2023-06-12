@@ -14,7 +14,7 @@ class AuthMethods {
   Future<bool> signInWithGoogle(BuildContext context) async {
     bool res = false;
     try {
-      final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+      final GoogleSignInAccount? googleUser = await GoogleSignIn().signOut();
       final GoogleSignInAuthentication? googleAuth =
           await googleUser?.authentication;
       final credential = GoogleAuthProvider.credential(
@@ -43,5 +43,9 @@ class AuthMethods {
       res = false;
     }
     return res;
+  }
+
+  signOut() {
+    final Function SignOut = signOut();
   }
 }
