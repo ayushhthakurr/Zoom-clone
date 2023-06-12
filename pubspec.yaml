@@ -18,7 +18,6 @@ dependencies:
   cloud_firestore: ^4.8.0
   firebase_auth: ^4.6.2
   google_sign_in: ^6.1.4
-  jitsi_meet_fix: ^4.0.5
   jitsi_meet_wrapper: ^0.0.6
 
 
