@@ -1,7 +1,7 @@
 # zoom_clone
 Zoom Clone compatible with android & iOS
 
-## Tech Used
+## Tech used
 **Server**: Firebase Auth, Firestore, Google Sign In, Jitsi Meet
 **Client**: Flutter
 
